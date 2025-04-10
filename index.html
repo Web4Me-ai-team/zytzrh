@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yangtian Zhang's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills&Interests</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="profile-pic">
+              <img src="profile/7.svg" alt="Yangtian Zhang" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+            </div>
+            <div class="right-section">
+              <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Yangtian Zhang</h1>
+              </div>
+              <div class="profile-card">
+                <p class="summary">
+                    Yangtian Zhang is a dedicated researcher specializing in Generative AI and Multi-Modal Foundation Models. With a strong academic background from Shanghai Jiao Tong University and ongoing Ph.D. studies at Yale University, Yangtian has contributed significantly to the field through research internships and assistantships. His work focuses on developing innovative generative approaches to address real-world challenges in vision, language, and scientific domains.
+                </p>
+              </div>
+            </div>
+          </section>
+        <div class="contacts">
+            <a href="mailto:yangtian.zhang@yale.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2022</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Engineering (B.Eng.) in Computer Science</h3>
+                            <span>Shanghai Jiao Tong University<br></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ongoing</div>
+                        <div class="timeline-content">
+                            <h3>Doctor of Philosophy (Ph.D.) student in Computer Science</h3>
+                            <span>Yale University<br></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">April 2024 – July 2024</div>
+                        <div class="timeline-content">
+                            <h3>Research Intern</h3>
+                            <span>Microsoft Research AI4Science<br></span>
+                            <p>Conducted research on multi-modal foundation model for AI-driven scientific discovery.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sept. 2021 – April 2024</div>
+                        <div class="timeline-content">
+                            <h3>Graduate Research Assistant</h3>
+                            <span>Mila - Quebec AI Institute<br></span>
+                            <p>Developed non-euclidean generative modelling with applications in protein science. Developed geometric deep learning techniques to molecular docking.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sept. 2020 – June 2022</div>
+                        <div class="timeline-content">
+                            <h3>Undergraduate Research Assistant</h3>
+                            <span>APEX Lab, Shanghai Jiao Tong University<br></span>
+                            <p>Designed a Multi-Step Generative Adversarial Imitation Learning framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>Skills & Interests</h2>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span>C/C++</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span>MATLAB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Verilog-HDL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-brain"></i>
+                <span>PyTorch</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-brain"></i>
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-brain"></i>
+                <span>Keras</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-language"></i>
+                <span>Mandarin Chinese (Native)</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-language"></i>
+                <span>English (Fluent)</span>
+              </div>
+            </div>
+        </section>
+          
+        <section id="publications" class="hidden">
+            <h2>Publications</h2>
+            <div class="publications-container" id="publications-container">
+              <div class="publication-card">
+                <h3>Non-Markovian Discrete Diffusion with Causal Language Models</h3>
+                <p class="authors">Yangtian Zhang, Sizhuang He, Daniel Levine, Lawrence Zhao, David Zhang, Syed A Rizvi, Emanuele Zappala, Rex Ying, David van Dijk</p>
+              </div>
+              <div class="publication-card">
+                <h3>Flow Matching for Collaborative Filtering</h3>
+                <p class="authors">Chengkai Liu, Yangtian Zhang, Jianling Wang, Rex Ying, James Caverlee</p>
+              </div>
+              <div class="publication-card">
+                <h3>CaLMFlow: Volterra Flow Matching using Causal Language Models</h3>
+                <p class="authors">Sizhuang He, Daniel Levine, Ivan Vrkic, Marco Francesco Bressana, David Zhang, Syed Asad Rizvi, Yangtian Zhang, Emanuele Zappala, David van Dijk</p>
+              </div>
+              <div class="publication-card">
+                <h3>DiffPack: A Torsional Diffusion Model for Autoregressive Protein Side-Chain Packing</h3>
+                <div class="publication-meta">
+                  <span class="journal">NeurIPS 2023</span>
+                  <span class="year">2023</span>
+                </div>
+                <p class="authors">Yangtian Zhang, Zuobai Zhang, Bozitao Zhong, Sanchit Misra, Jian Tang</p>
+              </div>
+              <div class="publication-card">
+                <h3>E3Bind: An End-to-End Equivariant Network for Protein-Ligand Docking</h3>
+                <div class="publication-meta">
+                  <span class="journal">ICLR 2023</span>
+                  <span class="year">2023</span>
+                </div>
+                <p class="authors">Yangtian Zhang, Huiyu Cai, Chence Shi, Bozitao Zhong, Jian Tang</p>
+              </div>
+              <div class="publication-card">
+                <h3>PEER: A Comprehensive and Multi-Task Benchmark for Protein Sequence Understanding</h3>
+                <div class="publication-meta">
+                  <span class="journal">NeurIPS 2022 Datasets and Benchmarks Track</span>
+                  <span class="year">2022</span>
+                </div>
+                <p class="authors">Minghao Xu, Zuobai Zhang, Jiarui Lu, Zhaocheng Zhu, Yangtian Zhang, Ma Chang, Runcheng Liu, Jian Tang</p>
+              </div>
+              <div class="publication-card">
+                <h3>Torchdrug: A powerful and flexible machine learning platform for drug discovery</h3>
+                <p class="authors">Zhaocheng Zhu, Chence Shi, Zuobai Zhang, Shengchao Liu, Minghao Xu, Xinyu Yuan, Yangtian Zhang, Junkun Chen, Huiyu Cai, Jiarui Lu, Chang Ma, Runcheng Liu, Louis-Pascal Xhonneux, Meng Qu, Jian Tang</p>
+              </div>
+              <div class="publication-card">
+                <h3>A Survey on Diffusion Models for Recommender Systems</h3>
+                <div class="publication-meta">
+                  <span class="journal">CoRR 2024</span>
+                  <span class="year">2024</span>
+                </div>
+                <p class="authors">Jianghao Lin, Jiaqi Liu, Jiachen Zhu, Yunjia Xi, Chengkai Liu, Yangtian Zhang, Yong Yu, Weinan Zhang</p>
+              </div>
+            </div>
+        </section>
+                    
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="carousel-wrapper">
+              <div class="projects-container">
+                <div class="project-card">
+                  <h3>TorchDrug: A Powerful and Flexible Machine Learning Platform for Drug Discovery</h3>
+                  <p>Played a pivotal role in the development of TorchDrug, a robust ML platform for drug discovery, assisting in supporting 6 tasks and implementing over 25 models, specializing in bioinformatics applications.</p>
+                  <ul class="project-list">
+                    <li>Over 1,300 stars and 40,000 downloads.</li>
+                  </ul>
+                </div>
+                <div class="project-card">
+                  <h3>TorchProtein: A Specialized Machine Learning Library for Protein Science</h3>
+                  <p>Played a pivotal role in the development of TorchProtein, a specialized extension of TorchDrug, focusing on implementing representation learning models for both protein sequences and structures.</p>
+                </div>
+                <div class="project-card">
+                  <h3>Hands-on-RL: A Comprehensive Chinese Tutorial for Reinforcement Learning</h3>
+                  <p>Contributed to the tutorial by authoring sections related to imitation learning, synthesizing complex RL concepts into accessible content, and implementing practical examples on Jupyter notebooks.</p>
+                </div>
+              </div>
+              <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+              <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200;
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500;
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-card');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            const container = document.querySelector('.projects-container');
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', updateCarousel);
+    </script>
+</body>
+</html>
